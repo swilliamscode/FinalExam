@@ -13,7 +13,7 @@ const ProductList = () => {
 
     return (
         <div>
-            <h1>Product List</h1>
+            <h2> Click on item for description!</h2>
             <ul>
                 <div className="container">
                 {products.map(product => (

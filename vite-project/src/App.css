@@ -1,87 +1,148 @@
-/** {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.banner {
+  color:rgba(5, 123, 250, 0.97);
+  font-family: "Dancing+Script", sans-serif;
 }
 
-.navbar {
-  width: 100%;
-  height: 10vh;
-  background-color: black;
+.banner-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  color: white;
-  padding: 10px;
-  font-weight: bold;
+  background-color:rgba(243, 217, 150, 0.854);
+  width: 100vw;
+  height: 75px;
 }
 
-.product-container {
-  width: 100%;
-  min-height: 80vh;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  padding: 10px;
-}
-
-img {
-  width: 250px;
-  height: 250px;
-  transition: all 0.3s ease;
-}
-
-img:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.card {
-  display: flex;
+.logo {
+  height: 60px;
+  width: 200px;
+  margin-top: 45px;
+  margin-right: 100px;
+  position: relative;
+  left: 120px;
+  bottom: 40px;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 20px 0;
 }
 
-.card-description {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+.sign-up-button {
+  border-color: red;
+  border: 2px solid red;
+  background-color: rgba(253, 238, 23, 0.336);
 }
 
-.footer {
-  width: 100%;
-  height: 10vh;
-  background-color: black;
+.icons {
   display: flex;
-  align-items: center;
-  color: white;
-  justify-content: center;
-  font-size: 19px;
-  font-weight: bold;
-}*/
+  padding-top: 45px;
+  align-items: end;
+  margin-left: 90px
+}
 
+.banner2-container {
+  height: 40px;
+  background-color: bisque;
+  text-align: center;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  background-color: rgba(250, 236, 47, 0.445);
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.search-input {
+  width: 80%;
+  max-width: 600px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 2px solid black;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+  color: black;
+  cursor: pointer;
+}
+
+.search-icon :hover {
+  color: red;
+}
+
+.navbar {
+  background-color: rgba(219, 186, 87, 0.854);
+  overflow: hidden;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  flex: 1;
+}
+  
+.navbar-item  a {
+  flex: 1;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-item :hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.hero-container {
+  padding-top: 10px;
+ 
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.offerings-container {
+  width: 100%;
+  display: flex;
+}
+
+.offerings {
+  width: 50%;
+  padding: 10px;
 }
 
 .card {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 4px solid ;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px red;
   overflow: hidden;
-  width: 300px;
+  width: 250px;
   text-align: center;
+} 
+
+.img {
+  width: 100px;
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+  width: 80%;
+  height: 200px;
 }
 
 .card-body {
@@ -109,5 +170,59 @@ img:hover {
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #5690bf;
+  color: black;
+  cursor: pointer;
+}
+
+.footer-container {
+  color: rgba(255, 255, 255, 0.877);
+  background-color: rgba(0, 0, 0, 0.854);
+  padding-bottom: 3px;
+}
+
+.horizontal-list {
+  font-size: 14px;
+  margin-top: 40px;
+  padding: 0px 
+}
+.list-group {
+  list-style: none;
+}
+
+.list-group-item2 {
+  display: inline;
+  margin-left: 75px; 
+  cursor: pointer; 
+}
+.list-group-item2:hover {
+  color: gray;
+  
+}
+
+#list-1 {
+   margin-right: 40px;
+}
+.lock {
+  color: rgba(5, 123, 250, 0.97);
+  margin-right: 3px;
+  margin-top: 3px;
+  position: relative;
+  top: 7px;
+}
+
+
+
+.credit-card-icons {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the icons horizontally */
+  margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.credit-card-icons > * {
+  margin-right: 10px; /* Add some spacing between icons */
+}
+
+.credit-card-icons > *:last-child {
+  margin-right: 0; /* Remove margin from the last icon */
 }
