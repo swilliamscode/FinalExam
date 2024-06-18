@@ -8,8 +8,15 @@ const ProductList = () => {
     useEffect(() => {
         fetch("https://fakestoreapi.com/products")
         .then(response => response.json())
-        .then(data => setProducts(data));
+        .then(data => setProducts(data))
+        .catch((err) => {
+            console.error(err);
+          });
     }, []);
+
+    const handlePurchase = (product) => {
+        alert(`Purchased ${product.title}`);
+    }
 
     return (
         <div>
@@ -25,6 +32,7 @@ const ProductList = () => {
                     <h2>{product.title}</h2>
                     <p>Price: ${product.price}</p>
                     <p>Rating: {product.rating.rate} (count: {product.rating.count})</p>
+                    <button className="purchase-button" onClick={() => handlePurchase(product)}>Buy Now</button>
                     </Link>
                     </li>
                    
