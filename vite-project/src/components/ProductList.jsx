@@ -20,7 +20,7 @@ const ProductList = () => {
 
     return (
         <div>
-            <h2> Click on item for description!</h2>
+            <h2> Newest arrivals!</h2>
             <ul>
                 <div className="container">
                 {products.map(product => (
@@ -28,11 +28,12 @@ const ProductList = () => {
                     <li className="card" key={product.id}>
                     <Link to={`/products/${product.id}`}>
                     <img className="img" src={product.image} alt={product.title} />
-                    
-                    <h2>{product.title}</h2>
-                    <p>Price: ${product.price}</p>
-                    <p>Rating: {product.rating.rate} (count: {product.rating.count})</p>
+                    <h2 className="card-text">{product.title}</h2>
+                    <p className="card-text">Price: ${product.price}</p>
+                    <p className="card-text">Rating: {product.rating.rate} (count: {product.rating.count})</p>
                     <button className="purchase-button" onClick={() => handlePurchase(product)}>Buy Now</button>
+                    
+                    
                     </Link>
                     </li>
                    

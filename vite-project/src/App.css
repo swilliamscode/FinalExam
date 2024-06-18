@@ -50,8 +50,6 @@
   border-radius: 50px;
 }
   
-
-
 .banner2-container {
   height: 40px;
   background-color: bisque;
@@ -150,6 +148,10 @@
   width: 250px;
   text-align: center;
 } 
+.card-text {
+  color: black;
+  font-size: 15px;
+}
 
 .img {
   width: 100px;
