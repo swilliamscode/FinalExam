@@ -8,18 +8,18 @@ import Banner from "./components/Banner";
 import CreditCardIcons from "./components/CreditCardIcons";
 import Banner2 from "./components/Banner2";
 import SearchBar from "./components/SearchBar";
-import HeroSection from "./components/HeroSection";
 import OfferingCards from "./components/OfferingCards";
+
 import "./App.css";
 
 const App = () => {
   return (
+
     <Router>
       <Banner />
       <Banner2 />
       <SearchBar />
       <Navbar />
-      <HeroSection />
       <OfferingCards />
       <Routes>
         <Route path="/" element={<ProductList />} />
@@ -28,6 +28,7 @@ const App = () => {
       <CreditCardIcons />
       <Footer />
     </Router>
+   
   );
 };
 

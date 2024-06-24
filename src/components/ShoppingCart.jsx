@@ -1,6 +1,8 @@
+
 import "../App.css";
 
 const ShoppingCart = () => {
+  
   return (
     <>
       <button className="shopping-cart">
@@ -15,7 +17,7 @@ const ShoppingCart = () => {
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className="feather feather-shopping-cart"
+          class="feather feather-shopping-cart"
         >
           <circle cx="9" cy="21" r="1"></circle>
           <circle cx="20" cy="21" r="1"></circle>
