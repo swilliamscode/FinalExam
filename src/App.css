@@ -1,9 +1,12 @@
-
+.banner {
+  color:rgba(5, 123, 250, 0.97);
+  font-family: "Dancing+Script", sans-serif;
+}
 
 .banner-container {
   display: flex;
   justify-content: center;
-  background-color: gray;
+  background-color:rgba(243, 217, 150, 0.854);
   width: 100vw;
   height: 75px;
 }
@@ -19,6 +22,13 @@
   align-items: center;
 }
 
+.sign-in-button {
+  border-color: red;
+  border: 2px solid maroon;
+  background-color: rgba(245, 235, 87, 0.58);
+  
+}
+
 .icon-container {
   display: flex;
   justify-content: center;
@@ -26,49 +36,52 @@
   align-items: center;
   margin-left: 200px;
   margin-bottom: 55px;
+  
 }
 .sign-in-button {
   border-radius: 50px;
   margin-bottom: 10px;
-  border: 2px solid rgba(255, 0, 0, 0.692);
-  background-color: lightgrey;
+  border: 2px solid maroon;
+  background-color: rgba(245, 235, 87, 0.58);
 }
 
 .login-button {
   border-radius: 50px;
   margin-bottom: 13px;
   align-items: center;
-  border: 2px solid darkslategray;
-  background-color: lightgrey;
+  border: 2px solid maroon;
+  background-color: rgba(245, 235, 87, 0.58);
 }
 
 .bell-button {
   border-radius: 50px;
   margin-bottom: 13px;
-  border: 2px solid darkslategray;
-  background-color: lightgrey;
+  border: 2px solid maroon;
+  background-color: rgba(245, 235, 87, 0.58);
 }
 
 .shopping-cart {
   border-radius: 50px;
   margin-bottom: 13px;
-  border: 2px solid darkslategray;
-  background-color: lightgrey;
+  border: 2px solid maroon;
+  background-color: rgba(245, 235, 87, 0.58);
 }
 .menu {
   border-radius: 50px;
   margin-bottom: 13px;
   border-color: red;
-  border: 2px solid darkslategray;
-  background-color: lightgrey
+  border: 2px solid maroon;
+  background-color: rgba(245, 235, 87, 0.58);
 }
   
 .banner2-container {
   height: 30px;
-  background-color: rgba(255, 0, 0, 0.692);
+  background-color: bisque;
   text-align: center;
 }
-
+.banner-text {
+  
+}
 
 .container {
   display: flex;
@@ -102,15 +115,15 @@
 .search-icon {
   color: black;
   cursor: pointer;
-  margin-left: 10px; 
+  margin-left: 20px; 
   border: 3px solid black;
   position: relative;
-  border: 2px solid darkslategray;
-  background-color: lightgray
+  border: 2px solid maroon;
+  background-color: rgba(245, 235, 87, 0.58);
 }
 
 .navbar {
-  background-color:rgba(211, 211, 211, 0.989);
+  background-color: rgba(219, 186, 87, 0.854);
   overflow: hidden;
 }
 
@@ -176,7 +189,6 @@
   width: 100px;
 }
 
-
 .card img {
   width: 80%;
   height: 200px;
@@ -196,11 +208,9 @@
   margin-bottom: 10px;
 }
 
-.buy-button {
+.purchase-button {
   border: 2px solid black;
   border-radius: 20px;
-  background-color: lightgrey
-  
 }
 
 .button {
@@ -217,24 +227,6 @@
   background-color: #5690bf;
   color: black;
   cursor: pointer;
-}
-.cart-controls {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 5px;
-}
-.count-button {
-  border: 1px solid black;
-  border-radius: 0;
-  text-align: center;
-  height: 39px
- 
-  
-}
-.cart-input {
-  width: 80px;
-  height: 24px;
-  
 }
 
 .footer-container {

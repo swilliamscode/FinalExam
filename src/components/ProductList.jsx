@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
 import "../App.css";
 
 const ProductList = () => {
@@ -33,9 +32,8 @@ const ProductList = () => {
                 <p className="card-text">
                   Rating: {product.rating.rate} (count: {product.rating.count})
                 </p>
-
                 <button
-                  className="buy-button"
+                  className="purchase-button"
                   onClick={() => handlePurchase(product)}
                 >
                   Buy Now
