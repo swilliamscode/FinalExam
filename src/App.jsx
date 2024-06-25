@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import ProductList from "./components/ProductList";
 import ProductDetail from "./components/ProductDetail";
 import Navbar from "./components/Navbar";
@@ -15,7 +15,7 @@ import "./App.css";
 const App = () => {
   return (
 
-    <Router>
+    <HashRouter>
       <Banner />
       <Banner2 />
       <SearchBar />
@@ -27,7 +27,7 @@ const App = () => {
       </Routes>
       <CreditCardIcons />
       <Footer />
-    </Router>
+    </HashRouter>
    
   );
 };
